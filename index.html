@@ -1956,4 +1956,12 @@
         }
 
         window.addEventListener('load', () => {
-    
+            setTimeout(() => {
+                if (!chatContainer.classList.contains('active')) {
+                    notificationBadge.style.display = 'flex';
+                }
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
