@@ -9,7 +9,7 @@
     
     <!-- IMPORTANTE: Sube el archivo nexus-mapa-plano.jpg a tu servidor y actualiza esta URL -->
     <script>
-        const NEXUS_MAP_URL = 'https://nexuslogisticshub.com/nexus-mapa-plano.jpg'; // Cambia por la URL completa donde subas la imagen
+        const NEXUS_MAP_URL = 'https://nexuslogisticshub.com/nexus-mapa-plano.jpg''; // Cambia por la URL completa donde subas la imagen
     </script>
     
     <style>
@@ -690,7 +690,7 @@
                 <a href="https://www.nuusca.com" target="_blank">www.nuusca.com</a>
             </p>
             <p style="margin-top: 10px; font-size: 12px;">
-                Contacto: Judith Leal • WhatsApp: 341 170 7365 • asesorajudithleal@gmail.com
+                Contacto: Judith Leal • WhatsApp: 341 170 7365 • <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4c5d7c1d7cbd6c5ced1c0cdd0ccc8c1c5c8e4c3c9c5cdc88ac7cbc9">[email&#160;protected]</a>
             </p>
         </div>
     </div>
@@ -742,9 +742,9 @@
         <img class="modal-content" id="modalImage">
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // CONFIGURACIÓN
-        const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbyzBnKHYIkAHjRlkNVbPWY5icXCgvsOx3Woqv3fo3UNOGLCZkRj8-sUy4I8dcUjFbmhUQ/exec'; // Tu URL de Apps Script aquí
+        const GOOGLE_SHEETS_URL = ''; // Tu URL de Apps Script aquí
         
         const NEXUS_CONFIG = {
             nombre: "NEXUS Centro Logístico",
@@ -1314,7 +1314,7 @@ rincipales.forEach((zona, index) => {
                 addMessage(`Con gusto te llamamos. Primero, ¿cuál es tu nombre?`);
             }
             else if (lowerInput.includes('whatsapp')) {
-                const whatsappLink = `https://wa.me/${NEXUS_CONFIG.whatsapp.replace(/\\s/g, '')}?text=Hola Judith, me interesa NEXUS Centro Logístico`;
+                const whatsappLink = `https://wa.me/${NEXUS_CONFIG.whatsapp.replace(/\s/g, '')}?text=Hola Judith, me interesa NEXUS Centro Logístico`;
                 window.open(whatsappLink, '_blank');
                 addMessage(`Te he redirigido a WhatsApp con Judith. También podemos agendar una visita aquí.`,
                     true,
@@ -1371,7 +1371,7 @@ rincipales.forEach((zona, index) => {
             
             if (!isValidOption) {
                 if (question.id === 'superficie') {
-                    const numeros = lowerInput.match(/\\d+/g);
+                    const numeros = lowerInput.match(/\d+/g);
                     if (numeros && numeros.length > 0) {
                         const numero = parseInt(numeros[0]);
                         
@@ -1403,7 +1403,7 @@ rincipales.forEach((zona, index) => {
                 }
                 
                 if (question.id === 'presupuesto') {
-                    const numeros = lowerInput.match(/\\d+/g);
+                    const numeros = lowerInput.match(/\d+/g);
                     if (numeros && numeros.length > 0) {
                         let numero = parseInt(numeros[0]);
                         
@@ -1527,7 +1527,7 @@ rincipales.forEach((zona, index) => {
                     return;
                 }
                 
-                if (/^\\d+$/.test(trimmedInput)) {
+                if (/^\d+$/.test(trimmedInput)) {
                     addMessage(`Necesito tu nombre, no un número 😊`);
                     return;
                 }
@@ -1537,7 +1537,7 @@ rincipales.forEach((zona, index) => {
                 addMessage(`Encantada, ${trimmedInput}! 😊<br><br>¿Cuál es tu número de teléfono?`);
             }
             else if (contactStep === 'phone') {
-                const cleanPhone = trimmedInput.replace(/\\D/g, '');
+                const cleanPhone = trimmedInput.replace(/\D/g, '');
                 
                 if (cleanPhone.length < 10) {
                     addMessage(`Por favor, escribe un número válido (10 dígitos).<br>Ejemplo: 341 170 7365`);
@@ -1549,7 +1549,7 @@ rincipales.forEach((zona, index) => {
                 addMessage(`Perfecto! 📞<br><br>Y tu correo electrónico?`);
             }
             else if (contactStep === 'email') {
-                const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+                const emailRegex = /^[^\s@]+@[^\s@]+\\.[^\s@]+$/;
                 
                 if (!emailRegex.test(trimmedInput)) {
                     addMessage(`Ese correo no parece válido.<br>Ejemplo: tu@empresa.com`);
@@ -1609,7 +1609,7 @@ rincipales.forEach((zona, index) => {
             );
             
             setTimeout(() => {
-                const whatsappLink = `https://wa.me/${NEXUS_CONFIG.whatsapp.replace(/\\s/g, '')}?text=Hola Judith, soy ${conversationState.userData.nombre}. Agendé una visita a NEXUS para ${fechaInterpretada}`;
+                const whatsappLink = `https://wa.me/${NEXUS_CONFIG.whatsapp.replace(/\s/g, '')}?text=Hola Judith, soy ${conversationState.userData.nombre}. Agendé una visita a NEXUS para ${fechaInterpretada}`;
                 addMessage(
                     `También puedes contactar directamente:<br><br>` +
                     `<a href="${whatsappLink}" target="_blank" style="background: #10b981; color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; display: inline-block; margin-top: 8px; font-weight: 600;">💬 Abrir WhatsApp con Judith</a>`,
@@ -1685,12 +1685,3 @@ rincipales.forEach((zona, index) => {
         }
 
         window.addEventListener('load', () => {
-            setTimeout(() => {
-                if (!chatContainer.classList.contains('active')) {
-                    notificationBadge.style.display = 'flex';
-                }
-            }, 3000);
-        });
-    </script>
-</body>
-</html>
