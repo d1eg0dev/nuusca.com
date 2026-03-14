@@ -1617,7 +1617,9 @@
             setTimeout(function() {
                 chatContainer.classList.add('active');
                 notificationBadge.style.display = 'none';
-                initializeConversation();
+                if (state.messagesCount === 0) {
+                    initializeConversation();
+                }
             }, 2000);
         });
 
