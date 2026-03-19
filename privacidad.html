@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad - NEXUS Centro Logístico | NUUSCA</title>
+    <meta name="description" content="Aviso de Privacidad de NEXUS Centro Logístico. Conoce cómo protegemos y utilizamos tu información personal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0A2463;
+            --primary-light: #3E5C76;
+            --accent: #FB8500;
+            --text-dark: #1B263B;
+            --text-medium: #415A77;
+            --text-light: #778DA9;
+            --bg-light: #F8F9FA;
+            --white: #FFFFFF;
+            --border: #E0E0E0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo-area {
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo-area h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .logo-area .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        header p {
+            font-size: 1rem;
+            opacity: 0.85;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .update-date {
+            background: var(--bg-light);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+        
+        .update-date strong {
+            color: var(--primary);
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-medium);
+        }
+        
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-medium);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: #FFF3CD;
+            border-left: 4px solid #FFB703;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .info-box {
+            background: #E7F3FF;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .contact-section {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        
+        .contact-section h3 {
+            margin-top: 0;
+        }
+        
+        .contact-info {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .contact-item-icon {
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+        
+        .contact-item-content strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-item-content a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        
+        .footer-section a {
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            
+            .logo-area h1 {
+                font-size: 1.8rem;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            header {
+                background: white;
+                color: black;
+            }
+            
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <h1>Aviso de Privacidad</h1>
+                <p class="subtitle">NEXUS Centro Logístico</p>
+            </div>
+            <p>Protegemos tu información personal conforme a la Ley Federal de Protección de Datos Personales en Posesión de Particulares</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="update-date">
+            <strong>Última actualización:</strong> 14 de marzo de 2026
+        </div>
+
+        <section id="identidad">
+            <h2>1. Identidad y Domicilio del Responsable</h2>
+            <p><strong>NUUSCA</strong>, con domicilio en Manzanillo, Colima, México, es responsable del tratamiento de tus datos personales en relación con el proyecto <strong>NEXUS Centro Logístico</strong>.</p>
+            
+            <div class="info-box">
+                <p><strong>Datos de Contacto del Responsable:</strong></p>
+                <ul>
+                    <li><strong>Razón Social:</strong> NUUSCA</li>
+                    <li><strong>Proyecto:</strong> NEXUS Centro Logístico</li>
+                    <li><strong>Ubicación del Proyecto:</strong> Carretera Laguna de Cuyutlán, Florida, 28809 Manzanillo, Colima</li>
+                    <li><strong>Sitio Web:</strong> <a href="https://nuusca.com" target="_blank">nuusca.com</a></li>
+                    <li><strong>Correo Electrónico:</strong> asesorajudithleal@gmail.com</li>
+                    <li><strong>Teléfono:</strong> +52 341 170 7365</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="datos-recabados">
+            <h2>2. Datos Personales que Recabamos</h2>
+            <p>Para las finalidades establecidas en este aviso de privacidad, podemos recabar tus datos personales de distintas formas:</p>
+
+            <h3>2.1. Datos de Identificación y Contacto</h3>
+            <ul>
+                <li>Nombre completo</li>
+                <li>Correo electrónico</li>
+                <li>Número telefónico (celular/fijo)</li>
+                <li>Número de WhatsApp</li>
+            </ul>
+
+            <h3>2.2. Datos Profesionales y Comerciales</h3>
+            <ul>
+                <li>Nombre de la empresa o razón social</li>
+                <li>Giro o industria del negocio</li>
+                <li>Superficie requerida de terreno</li>
+                <li>Tipo de operación industrial/logística</li>
+                <li>Presupuesto aproximado de inversión</li>
+                <li>Urgencia y plazo de necesidad</li>
+                <li>Zona de interés en el proyecto</li>
+            </ul>
+
+            <h3>2.3. Datos de Navegación</h3>
+            <ul>
+                <li>Dirección IP</li>
+                <li>Tipo de navegador</li>
+                <li>Sistema operativo</li>
+                <li>Páginas visitadas en nuestro sitio web</li>
+                <li>Tiempo de navegación</li>
+                <li>Interacciones con el chatbot</li>
+                <li>Cookies y tecnologías de rastreo (Meta Pixel)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Importante:</strong> No recabamos datos personales sensibles como origen racial o étnico, estado de salud, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas, o preferencia sexual.</p>
+            </div>
+        </section>
+
+        <section id="finalidades">
+            <h2>3. Finalidades del Tratamiento de Datos</h2>
+            
+            <h3>3.1. Finalidades Primarias (Necesarias para el servicio)</h3>
+            <p>Utilizamos tus datos personales para las siguientes finalidades esenciales:</p>
+            <ul>
+                <li>Identificarte como prospecto interesado en NEXUS Centro Logístico</li>
+                <li>Contactarte para brindarte información sobre el proyecto</li>
+                <li>Proporcionarte asesoría personalizada sobre terrenos disponibles</li>
+                <li>Agendar y coordinar visitas al proyecto</li>
+                <li>Elaborar cotizaciones personalizadas según tus necesidades</li>
+                <li>Gestionar el proceso de venta y documentación</li>
+                <li>Cumplir con obligaciones legales derivadas de la relación comercial</li>
+                <li>Enviarte brochures digitales y material informativo del proyecto</li>
+            </ul>
+
+            <h3>3.2. Finalidades Secundarias (No necesarias para el servicio)</h3>
+            <p>También podemos utilizar tu información para:</p>
+            <ul>
+                <li>Enviarte información sobre nuevos desarrollos de NUUSCA</li>
+                <li>Realizar estudios de mercado y análisis estadísticos</li>
+                <li>Mejorar nuestros servicios y experiencia de usuario</li>
+                <li>Enviarte comunicaciones promocionales y de marketing</li>
+                <li>Crear perfiles de cliente para personalizar nuestros servicios</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Derecho de Oposición:</strong> Si no deseas que tus datos sean utilizados para finalidades secundarias, puedes manifestar tu negativa enviando un correo a <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a> con el asunto "Oposición Finalidades Secundarias".</p>
+            </div>
+        </section>
+
+        <section id="obtencion">
+            <h2>4. Medios de Obtención de Datos</h2>
+            <p>Recabamos tus datos personales a través de los siguientes medios:</p>
+            <ul>
+                <li><strong>Formularios web:</strong> Al completar formularios en <a href="https://nexuslogisticshub.com" target="_blank">nexuslogisticshub.com</a></li>
+                <li><strong>Chatbot interactivo:</strong> Durante conversaciones con nuestro asistente virtual</li>
+                <li><strong>Meta Ads (Facebook/Instagram):</strong> Al completar formularios de generación de leads</li>
+                <li><strong>Correo electrónico:</strong> Al enviarnos información por email</li>
+                <li><strong>WhatsApp:</strong> Al contactarnos vía WhatsApp Business</li>
+                <li><strong>Llamadas telefónicas:</strong> Durante conversaciones con nuestros asesores</li>
+                <li><strong>Visitas presenciales:</strong> Al visitar el proyecto físicamente</li>
+                <li><strong>Redes sociales:</strong> Al interactuar con nuestras páginas oficiales</li>
+            </ul>
+        </section>
+
+        <section id="transferencias">
+            <h2>5. Transferencias de Datos Personales</h2>
+            <p>Tus datos personales pueden ser compartidos en los siguientes casos:</p>
+
+            <h3>5.1. Transferencias que No Requieren Consentimiento</h3>
+            <ul>
+                <li>Cuando sea necesario para cumplir con autoridades competentes</li>
+                <li>Cuando sea requerido por ley o por autoridad competente</li>
+                <li>Para proteger nuestros derechos ante autoridades jurisdiccionales</li>
+            </ul>
+
+            <h3>5.2. Transferencias que Requieren Consentimiento</h3>
+            <p>Con tu consentimiento, podemos compartir tus datos con:</p>
+            <ul>
+                <li><strong>Asesores inmobiliarios autorizados</strong> para brindarte mejor atención</li>
+                <li><strong>Instituciones financieras</strong> para gestionar financiamiento (si aplica)</li>
+                <li><strong>Notarios y asesores legales</strong> para trámites de compraventa</li>
+                <li><strong>Empresas de tecnología</strong> (Google, Meta) para servicios de marketing digital</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Servicios de Terceros que Utilizamos:</strong></p>
+                <ul>
+                    <li><strong>Google LLC:</strong> Google Sheets, Google Analytics</li>
+                    <li><strong>Meta Platforms:</strong> Meta Pixel, Instagram Ads, Facebook Ads</li>
+                    <li><strong>Telegram Messenger:</strong> Notificaciones internas</li>
+                    <li><strong>WhatsApp (Meta):</strong> Comunicación con clientes</li>
+                </ul>
+                <p>Estas empresas tienen sus propias políticas de privacidad y están sujetas a las leyes de protección de datos de sus respectivas jurisdicciones.</p>
+            </div>
+        </section>
+
+        <section id="derechos-arco">
+            <h2>6. Tus Derechos ARCO</h2>
+            <p>Tienes derecho a conocer qué datos personales tenemos de ti, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es tu derecho solicitar la corrección de tu información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando consideres que la misma no está siendo utilizada conforme a los principios, deberes y obligaciones previstas en la normativa (Cancelación); así como oponerte al uso de tus datos personales para fines específicos (Oposición).</p>
+
+            <h3>6.1. Cómo Ejercer tus Derechos ARCO</h3>
+            <p>Para ejercer tus derechos ARCO, debes enviar una solicitud por escrito a:</p>
+            <ul>
+                <li><strong>Correo electrónico:</strong> <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a></li>
+                <li><strong>Asunto:</strong> "Solicitud de Derechos ARCO"</li>
+            </ul>
+
+            <h3>6.2. Requisitos de la Solicitud</h3>
+            <p>Tu solicitud debe contener:</p>
+            <ol>
+                <li>Nombre completo del titular</li>
+                <li>Domicilio o correo electrónico para recibir respuesta</li>
+                <li>Copia de identificación oficial (INE, pasaporte, cédula profesional)</li>
+                <li>Descripción clara de los datos sobre los que buscas ejercer algún derecho</li>
+                <li>Cualquier documento que facilite la localización de tus datos</li>
+            </ol>
+
+            <h3>6.3. Plazo de Respuesta</h3>
+            <p>Daremos respuesta a tu solicitud en un plazo máximo de <strong>20 días hábiles</strong> contados desde la fecha en que recibimos tu solicitud. Si es procedente, haremos efectiva la misma en un plazo máximo de <strong>15 días hábiles</strong> siguientes a la fecha en que comuniquemos la respuesta.</p>
+        </section>
+
+        <section id="revocacion">
+            <h2>7. Revocación del Consentimiento</h2>
+            <p>Puedes revocar el consentimiento que nos has otorgado para el tratamiento de tus datos personales en cualquier momento. Sin embargo, es importante que tengas en cuenta que no en todos los casos podremos atender tu solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando tus datos personales.</p>
+
+            <p>Para revocar tu consentimiento, debes enviar un correo electrónico a <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a> con el asunto "Revocación de Consentimiento".</p>
+        </section>
+
+        <section id="limitacion">
+            <h2>8. Limitación de Uso y Divulgación</h2>
+            <p>Para limitar el uso y divulgación de tu información personal, puedes solicitarlo mediante:</p>
+            <ul>
+                <li>Correo electrónico a: <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a></li>
+                <li>WhatsApp: <a href="https://wa.me/523411707365" target="_blank">+52 341 170 7365</a></li>
+            </ul>
+
+            <p>También puedes registrarte en el Registro Público de Usuarios (REUS) de la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF) para evitar publicidad no deseada.</p>
+        </section>
+
+        <section id="cookies">
+            <h2>9. Uso de Cookies y Tecnologías de Rastreo</h2>
+            <p>Nuestro sitio web utiliza cookies y otras tecnologías de rastreo para mejorar tu experiencia de navegación y recopilar información sobre cómo utilizas nuestros servicios.</p>
+
+            <h3>9.1. Cookies que Utilizamos</h3>
+            <ul>
+                <li><strong>Cookies técnicas:</strong> Necesarias para el funcionamiento del sitio</li>
+                <li><strong>Cookies analíticas:</strong> Para entender cómo los visitantes interactúan con el sitio</li>
+                <li><strong>Cookies de publicidad:</strong> Para mostrar anuncios relevantes (Meta Pixel)</li>
+                <li><strong>Cookies de preferencias:</strong> Para recordar tus preferencias</li>
+            </ul>
+
+            <h3>9.2. Meta Pixel (Facebook Pixel)</h3>
+            <p>Utilizamos Meta Pixel para:</p>
+            <ul>
+                <li>Medir la efectividad de nuestras campañas publicitarias</li>
+                <li>Entender las acciones que realizas en nuestro sitio web</li>
+                <li>Optimizar la entrega de anuncios a personas interesadas</li>
+                <li>Crear audiencias personalizadas para publicidad</li>
+            </ul>
+
+            <h3>9.3. Cómo Deshabilitar Cookies</h3>
+            <p>Puedes configurar tu navegador para rechazar cookies o eliminar las cookies existentes. Sin embargo, esto puede afectar la funcionalidad de nuestro sitio web.</p>
+            <ul>
+                <li><strong>Chrome:</strong> Configuración → Privacidad y seguridad → Cookies</li>
+                <li><strong>Firefox:</strong> Preferencias → Privacidad y seguridad</li>
+                <li><strong>Safari:</strong> Preferencias → Privacidad</li>
+            </ul>
+
+            <p>Para más información sobre Meta Pixel, visita: <a href="https://www.facebook.com/privacy/explanation" target="_blank">facebook.com/privacy</a></p>
+        </section>
+
+        <section id="seguridad">
+            <h2>10. Medidas de Seguridad</h2>
+            <p>Implementamos medidas de seguridad técnicas, físicas y administrativas para proteger tus datos personales contra daño, pérdida, alteración, destrucción o el uso, acceso o tratamiento no autorizado.</p>
+
+            <h3>10.1. Medidas Técnicas</h3>
+            <ul>
+                <li>Cifrado SSL/TLS en todas las transmisiones de datos</li>
+                <li>Protección de bases de datos con contraseñas robustas</li>
+                <li>Respaldos periódicos de información</li>
+                <li>Firewalls y sistemas de detección de intrusos</li>
+            </ul>
+
+            <h3>10.2. Medidas Administrativas</h3>
+            <ul>
+                <li>Capacitación del personal en protección de datos</li>
+                <li>Políticas internas de manejo de información</li>
+                <li>Acuerdos de confidencialidad con empleados y colaboradores</li>
+                <li>Auditorías periódicas de seguridad</li>
+            </ul>
+        </section>
+
+        <section id="menores">
+            <h2>11. Datos de Menores de Edad</h2>
+            <p>Nuestros servicios no están dirigidos a menores de 18 años. No recabamos intencionalmente datos personales de menores. Si descubrimos que hemos recabado datos de un menor sin consentimiento parental verificable, eliminaremos esa información de nuestros sistemas lo antes posible.</p>
+        </section>
+
+        <section id="cambios">
+            <h2>12. Cambios al Aviso de Privacidad</h2>
+            <p>Nos reservamos el derecho de efectuar cambios o actualizaciones al presente aviso de privacidad en cualquier momento, para la atención de novedades legislativas, políticas internas o nuevos requisitos para la prestación u ofrecimiento de nuestros servicios.</p>
+
+            <p>Estos cambios estarán disponibles al público a través de los siguientes medios:</p>
+            <ul>
+                <li>Sitio web: <a href="https://nexuslogisticshub.com/privacidad" target="_blank">nexuslogisticshub.com/privacidad</a></li>
+                <li>Sitio web: <a href="https://nuusca.com" target="_blank">nuusca.com</a></li>
+                <li>Correo electrónico a clientes registrados</li>
+            </ul>
+
+            <p><strong>Última actualización:</strong> 14 de marzo de 2026</p>
+        </section>
+
+        <section id="autoridad">
+            <h2>13. Autoridad Competente</h2>
+            <p>Si consideras que tu derecho de protección de datos personales ha sido lesionado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, presumes que en el tratamiento de tus datos personales existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, puedes interponer la queja o denuncia correspondiente ante el INAI.</p>
+
+            <div class="info-box">
+                <p><strong>Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI)</strong></p>
+                <ul>
+                    <li><strong>Sitio web:</strong> <a href="https://home.inai.org.mx" target="_blank">home.inai.org.mx</a></li>
+                    <li><strong>Teléfono:</strong> 800 835 43 24</li>
+                    <li><strong>Correo:</strong> info@inai.org.mx</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="contact-section">
+            <h3>¿Tienes Dudas o Comentarios?</h3>
+            <p>Si tienes alguna pregunta sobre este Aviso de Privacidad o sobre el tratamiento de tus datos personales, contáctanos:</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <div class="contact-item-content">
+                        <strong>Correo Electrónico</strong>
+                        <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <div class="contact-item-content">
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/523411707365" target="_blank">+52 341 170 7365</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-icon">🌐</div>
+                    <div class="contact-item-content">
+                        <strong>Sitio Web</strong>
+                        <a href="https://nexuslogisticshub.com" target="_blank">nexuslogisticshub.com</a><br>
+                        <a href="https://nuusca.com" target="_blank">nuusca.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <div class="contact-item-content">
+                        <strong>Ubicación del Proyecto</strong>
+                        Carretera Laguna de Cuyutlán<br>
+                        Florida, 28809<br>
+                        Manzanillo, Colima, México
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Consentimiento:</strong> Al proporcionar tus datos personales a través de nuestros formularios, sitio web, o cualquier otro medio, manifiestas tu consentimiento para que tus datos sean tratados conforme a los términos y condiciones del presente Aviso de Privacidad.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>NEXUS Centro Logístico</h4>
+                <p>El parque industrial más estratégico del Pacífico mexicano.</p>
+                <p>A 2 minutos del Puerto de Manzanillo</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Enlaces Legales</h4>
+                <a href="#identidad">Identidad del Responsable</a>
+                <a href="#derechos-arco">Derechos ARCO</a>
+                <a href="#cookies">Política de Cookies</a>
+                <a href="#cambios">Cambios al Aviso</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a>
+                <a href="tel:+523411707365">+52 341 170 7365</a>
+                <a href="https://nexuslogisticshub.com" target="_blank">nexuslogisticshub.com</a>
+                <a href="https://nuusca.com" target="_blank">nuusca.com</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <p>Mantente informado sobre nuestros desarrollos y novedades.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 NUUSCA - NEXUS Centro Logístico. Todos los derechos reservados.</p>
+            <p>Conforme a la Ley Federal de Protección de Datos Personales en Posesión de Particulares</p>
+        </div>
+    </footer>
+</body>
+</html>
