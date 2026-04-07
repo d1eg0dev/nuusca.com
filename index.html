@@ -784,6 +784,48 @@
                 grid-template-columns: 1fr;
             }
         }
+                    /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+               background: linear-gradient(
+                135deg, 
+                rgba(13, 27, 42, 0.85) 0%,   /* 85% opaco */
+                rgba(10, 36, 99, 0.75) 50%,  /* 75% opaco */
+                rgba(26, 35, 50, 0.85) 100%
+            );
+            backdrop-filter: blur(2px);
+        }
+        
+        body {
+            position: relative;
+            z-index: 1;
+        }
     </style>
         <!-- Meta Pixel Code -->
         <script>
@@ -809,6 +851,13 @@
         <!-- End Meta Pixel Code -->
 </head>
 <body>
+        <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="nexus-background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
     <!-- Animated Particles -->
     <div class="particles" id="particles"></div>
 
