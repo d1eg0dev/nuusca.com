@@ -1053,15 +1053,18 @@
         // ============================================
         // ESTADO DE LA CONVERSACIÓN
         // ============================================
-        let state = {
-            stage: 'greeting',
-            userData: {},
-            currentQuestionIndex: 0,
-            leadScore: 0,
-            messagesCount: 0,
-            contactStep: 'name',
-            failedAttempts: {}
-        };
+             let state = {
+                stage: 'greeting',
+                userData: {},
+                currentQuestionIndex: 0,
+                leadScore: 0,
+                messagesCount: 0,
+                contactStep: 'name',
+                failedAttempts: {},
+                conversationInitialized: false,  // ✅ NUEVO
+                zonesShown: false,                // ✅ NUEVO
+                mapShown: false                   // ✅ NUEVO
+            };
 
         // ============================================
         // DOM ELEMENTS
@@ -1232,6 +1235,12 @@
         // CONVERSATION FLOW
         // ============================================
         function initializeConversation() {
+            // ✅ PREVENIR DUPLICADOS
+            if (state.conversationInitialized) {
+                return;
+            }
+            state.conversationInitialized = true;
+            
             addMessage('¡Hola! 👋 Soy <strong>Judith Leal</strong>, tu asesora en <strong>NEXUS Centro Logístico</strong>.', true);
             
             setTimeout(function() {
@@ -1244,7 +1253,7 @@
             }, 3000);
             
             setTimeout(function() {
-                addMessage('¿Te gustaría conocer nuestras <strong>5 zonas disponibles</strong>, ver el mapa o calcular tu inversión?', true, {
+                addMessage('¿Te gustaría conocer nuestras <strong>8 zonas disponibles</strong>, ver el mapa o calcular tu inversión?', true, {
                     quickReplies: ['Ver zonas y precios', 'Ver plano del proyecto', 'Calcular inversión', 'Agendar visita']
                 });
                 state.stage = 'initial_interest';
@@ -1316,40 +1325,47 @@
         }
 
         function showZones() {
-            addMessage('💎 <strong>NEXUS tiene 8 zonas disponibles:</strong>', true);
-            
-            const zonasPrincipales = CONFIG.zonas.slice(0, 8);
-            zonasPrincipales.forEach(function(zona, index) {
-                setTimeout(function() {
-                    let zoneHTML = '<div class="zone-card">';
-                    zoneHTML += '<h4>' + zona.emoji + ' ' + zona.nombre + '</h4>';
-                    zoneHTML += '<div class="price">' + zona.precio + '</div>';
-                    if (zona.precioEsquina) {
-                        zoneHTML += '<div style="font-size: 13px; color: #64748b; margin-top: 4px;">Esquina: ' + zona.precioEsquina + '</div>';
-                    }
-                    zoneHTML += '<div class="description">' + zona.descripcion + '</div>';
-                    zoneHTML += '</div>';
-                    addMessage(zoneHTML, true);
-                }, 700 * (index + 1));
-            });
-            
-            setTimeout(function() {
-                const especialesHTML = '<div class="info-card"><strong>✨ Opciones adicionales:</strong><br><br>🚛 <strong>Patio de Maniobras Executive:</strong> $5,000/m²<br>📦 <strong>Zona Logistics:</strong> $5,000/m²</div>';
-                addMessage(especialesHTML, true);
-            }, 2600);
-            
-            setTimeout(function() {
-                const promoBox = '<div class="highlight-box"><strong>🎁 PREVENTA ACTIVA:</strong> Precios preferenciales<br><strong>💰 Desde:</strong> $3,000,000 MXN<br><strong>⚡ Incrementos:</strong> Cada 6 meses aprox</div>';
-                addMessage(promoBox, true);
-            }, 3400);
-            
-            setTimeout(function() {
-                addMessage('¿Te gustaría ver el plano del proyecto, calcular tu inversión o conocer el financiamiento?', true, {
-                    quickReplies: ['Ver plano', 'Calcular inversión', 'Financiamiento', 'Agendar visita']
+                // ✅ PREVENIR DUPLICADOS
+                if (state.zonesShown) {
+                    return;
+                }
+                state.zonesShown = true;
+                
+                addMessage('💎 <strong>NEXUS tiene 8 zonas disponibles:</strong>', true);
+                
+                const zonasPrincipales = CONFIG.zonas.slice(0, 8);
+                zonasPrincipales.forEach(function(zona, index) {
+                    setTimeout(function() {
+                        let zoneHTML = '<div class="zone-card">';
+                        zoneHTML += '<h4>' + zona.emoji + ' ' + zona.nombre + '</h4>';
+                        zoneHTML += '<div class="price">' + zona.precio + '</div>';
+                        if (zona.precioEsquina) {
+                            zoneHTML += '<div style="font-size: 13px; color: #64748b; margin-top: 4px;">Esquina: ' + zona.precioEsquina + '</div>';
+                        }
+                        zoneHTML += '<div class="description">' + zona.descripcion + '</div>';
+                        zoneHTML += '</div>';
+                        addMessage(zoneHTML, true);
+                    }, 700 * (index + 1));
                 });
-                state.stage = 'post_zones';
-            }, 4200);
-        }
+                
+                setTimeout(function() {
+                    const especialesHTML = '<div class="info-card"><strong>✨ Opciones adicionales:</strong><br><br>🚛 <strong>Patio de Maniobras Executive:</strong> $5,000/m²<br>📦 <strong>Zona Logistics:</strong> $5,000/m²</div>';
+                    addMessage(especialesHTML, true);
+                }, 6000); // ✅ Ajustado: 8 zonas × 700ms = 5600ms + margen
+                
+                setTimeout(function() {
+                    const promoBox = '<div class="highlight-box"><strong>🎁 PREVENTA ACTIVA:</strong> Precios preferenciales<br><strong>💰 Desde:</strong> $3,000,000 MXN<br><strong>⚡ Incrementos:</strong> Cada 6 meses aprox</div>';
+                    addMessage(promoBox, true);
+                }, 6800);
+                
+                setTimeout(function() {
+                    addMessage('¿Te gustaría ver el plano del proyecto, calcular tu inversión o conocer el financiamiento?', true, {
+                        quickReplies: ['Ver plano', 'Calcular inversión', 'Financiamiento', 'Agendar visita']
+                    });
+                    state.stage = 'post_zones';
+                    state.zonesShown = false; // ✅ Reset para poder mostrar de nuevo si es necesario
+                }, 7600);
+            }
 
         function showMap() {
             addMessage('📍 <strong>Plano del Proyecto NEXUS</strong>', true);
