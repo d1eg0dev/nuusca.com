@@ -871,7 +871,7 @@
         <p>La nueva generación de espacios industriales en Manzanillo, Colima. Ubicación estratégica, infraestructura de primer nivel.</p>
         
         <!-- Botón Brochure en Landing -->
-        <a href="https://drive.google.com/file/d/18QtFU9bOIm_xmVoYQVWZU4ObD0hR01ZA/view?usp=sharing" target="_blank" class="brochure-btn-hero">
+        <a href="https://drive.google.com/uc?export=download&id=1y2f-PGy68dMbUvmaYjOSZDaYg6ajoBOj" target="_blank" class="brochure-btn-hero">            
             📄 Descargar Brochure Digital
         </a>
         
@@ -923,7 +923,7 @@
 
         <!-- Barra de Brochure Siempre Visible -->
         <div class="brochure-bar">
-            <a href="https://drive.google.com/file/d/18QtFU9bOIm_xmVoYQVWZU4ObD0hR01ZA/view?usp=sharing" target="_blank" class="brochure-btn-chat">
+            <a href="https://drive.google.com/uc?export=download&id=1y2f-PGy68dMbUvmaYjOSZDaYg6ajoBOj" target="_blank" class="brochure-btn-chat">
                 📄 Ver Brochure Digital
             </a>
         </div>
@@ -955,9 +955,8 @@
         // CONFIGURACIÓN
         // ============================================
         const CONFIG = {
-            GOOGLE_SHEETS_URL: 'https://script.google.com/macros/s/AKfycbxsXglqWCbMjWNJLJh4Qd-5cMrwQTbE_dNHhUaijZY2KxplagOm4EWT63AljNtc0pBaMg/exec',
-            NEXUS_MAP_URL: 'https://nexuslogisticshub.com/nexus-mapa-plano.jpg',
-            BROCHURE_URL: 'https://drive.google.com/file/d/18QtFU9bOIm_xmVoYQVWZU4ObD0hR01ZA/view?usp=sharing', // Google Drive
+            GOOGLE_SHEETS_URL: 'https://script.google.com/macros/s/AKfycbyzBnKHYIkAHjRlkNVbPWY5icXCgvsOx3Woqv3fo3UNOGLCZkRj8-sUy4I8dcUjFbmhUQ/exec',
+            BROCHURE_URL: 'https://drive.google.com/uc?export=download&id=1y2f-PGy68dMbUvmaYjOSZDaYg6ajoBOj', // Google Drive
             
             asesora: 'Judith Leal',
             telefono: '341 170 7365',
@@ -965,11 +964,62 @@
             email: 'asesorajudithleal@gmail.com',
             
             zonas: [
-                { nombre: 'Zona Business', precio: '$6,000/m²', precioEsquina: '$6,600/m²', precioNum: 6000, emoji: '🌸', descripcion: 'Perfecta para centros de distribución y ecommerce' },
-                { nombre: 'Zona Executive', precio: '$7,500/m²', precioEsquina: '$8,000/m²', precioNum: 7500, emoji: '🟣', descripcion: 'Para imagen corporativa y oficinas logísticas' },
-                { nombre: 'Zona Platinum', precio: '$9,000/m²', precioNum: 9000, emoji: '💎', descripcion: 'Zona premium para empresas de alto nivel' },
-                { nombre: 'Patio de Maniobras Executive', precio: '$5,000/m²', precioNum: 5000, emoji: '🚛', descripcion: 'Espacio para maniobras y operaciones logísticas' },
-                { nombre: 'Zona Logistics', precio: '$5,000/m²', precioNum: 5000, emoji: '📦', descripcion: 'Área especializada en operaciones logísticas' }
+                {
+                    emoji: '🔵',
+                    nombre: 'Zona Executive A',
+                    precio: '$6,000 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Zona estratégica para operaciones medianas'
+                },
+                {
+                    emoji: '🟣',
+                    nombre: 'Zona Executive B',
+                    precio: '$6,549 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Ubicación premium con mejor acceso'
+                },
+                {
+                    emoji: '🌸',
+                    nombre: 'Zona Business',
+                    precio: '$6,849 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Ideal para empresas establecidas'
+                },
+                {
+                    emoji: '💗',
+                    nombre: 'Zona Business Plus',
+                    precio: '$7,000 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Ubicación privilegiada con servicios premium'
+                },
+                {
+                    emoji: '🟣',
+                    nombre: 'Zona Executive Premium',
+                    precio: '$7,399 MXN/m²',
+                    precioEsquina: null,
+                    descripción: 'Máxima visibilidad y accesibilidad'
+                },
+                {
+                    emoji: '💖',
+                    nombre: 'Zona Executive Elite',
+                    precio: '$7,500 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Zona de mayor plusvalía'
+                },
+                {
+                    emoji: '🟣',
+                    nombre: 'Zona Executive Supreme',
+                    precio: '$7,699 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Ubicación estratégica única'
+                },
+                {
+                    emoji: '💎',
+                    nombre: 'Zona Platinum',
+                    precio: '$10,000 MXN/m²',
+                    precioEsquina: null,
+                    descripcion: 'Premium - La mejor ubicación del proyecto'
+                }
             ],
             
             preguntasCalificacion: [
@@ -1266,9 +1316,9 @@
         }
 
         function showZones() {
-            addMessage('💎 <strong>NEXUS tiene 5 zonas disponibles:</strong>', true);
+            addMessage('💎 <strong>NEXUS tiene 8 zonas disponibles:</strong>', true);
             
-            const zonasPrincipales = CONFIG.zonas.slice(0, 3);
+            const zonasPrincipales = CONFIG.zonas.slice(0, 8);
             zonasPrincipales.forEach(function(zona, index) {
                 setTimeout(function() {
                     let zoneHTML = '<div class="zone-card">';
