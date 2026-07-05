@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | NEXUS Centro Logístico</title>
+    <meta name="description" content="Política de privacidad y tratamiento de datos de NEXUS Centro Logístico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A2463;
+            --primary-light: #3E5C76;
+            --accent: #FB8500;
+            --accent-light: #FFB703;
+            --bg-light: #F8F9FA;
+            --text-dark: #1B263B;
+            --text-light: #778DA9;
+            --white: #FFFFFF;
+            --shadow: rgba(10, 36, 99, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0D1B2A 0%, #1a2332 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: var(--text-dark);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 20px var(--shadow);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        header a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        header a:hover {
+            background: #E07200;
+            transform: translateY(-2px);
+        }
+
+        /* Container */
+        .policy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 30px var(--shadow);
+        }
+
+        .policy-container h2 {
+            color: var(--primary);
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        .policy-container h3 {
+            color: var(--primary-light);
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .policy-container p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 15px;
+        }
+
+        .policy-container ul, 
+        .policy-container ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .policy-container li {
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(251, 133, 0, 0.1) 0%, rgba(10, 36, 99, 0.05) 100%);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .data-table tr:hover {
+            background: var(--bg-light);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .important {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-box a {
+            color: var(--accent-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .date-updated {
+            color: var(--text-light);
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 3px solid var(--accent);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.9);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .policy-container {
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            .policy-container h2 {
+                font-size: 22px;
+            }
+
+            .data-table {
+                font-size: 12px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+            }
+        }
+
+        .toc {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .toc a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>📋 Política de Privacidad</h1>
+        <p>NEXUS Centro Logístico - Tratamiento de Datos Personales</p>
+        <a href="/">← Volver al Sitio Principal</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="policy-container">
+        <div class="date-updated">
+            <strong>Última actualización:</strong> Enero 2026<br>
+            <strong>Vigencia:</strong> Esta política de privacidad es efectiva a partir de la fecha anterior
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>📑 Contenido de esta Política</h3>
+            <ul>
+                <li><a href="#intro">1. Introducción y Titular de Datos</a></li>
+                <li><a href="#datos-recopilados">2. Datos Personales que Recopilamos</a></li>
+                <li><a href="#proposito">3. Propósito del Tratamiento</a></li>
+                <li><a href="#base-legal">4. Base Legal para el Tratamiento</a></li>
+                <li><a href="#plataformas">5. Plataformas y Servicios que Utilizamos</a></li>
+                <li><a href="#retencion">6. Tiempo de Retención de Datos</a></li>
+                <li><a href="#derechos">7. Tus Derechos</a></li>
+                <li><a href="#seguridad">8. Seguridad de Datos</a></li>
+                <li><a href="#cookies">9. Cookies y Tecnologías de Rastreo</a></li>
+                <li><a href="#contacto">10. Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- 1. Introduction -->
+        <h2 id="intro">1. Introducción y Titular de Datos</h2>
+        <p>
+            <strong>Empresa:</strong> NEXUS Centro Logístico<br>
+            <strong>Ubicación:</strong> Carretera Laguna de Cuyutlán, Florida, 28809 Manzanillo, Colima, México<br>
+            <strong>Contacto:</strong> <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a><br>
+            <strong>Teléfono:</strong> <a href="tel:+523411707365">+52 341 170 7365</a>
+        </p>
+        <p>
+            En NEXUS Centro Logístico, respetamos tu privacidad y nos comprometemos a proteger tus datos personales. 
+            Esta Política de Privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos tu información 
+            personal cuando utilizas nuestro sitio web, chatbot y canales de comunicación.
+        </p>
+
+        <!-- 2. Data Collection -->
+        <h2 id="datos-recopilados">2. Datos Personales que Recopilamos</h2>
+        <p>Recopilamos los siguientes datos personales:</p>
+
+        <h3>A) A través del Formulario de Contacto y Chatbot:</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Dato Personal</th>
+                    <th>Descripción</th>
+                    <th>Obligatorio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Nombre Completo</strong></td>
+                    <td>Tu nombre y apellidos</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>Número de Teléfono</strong></td>
+                    <td>Tu número celular o teléfono fijo</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>Correo Electrónico</strong></td>
+                    <td>Tu dirección de email personal o corporativo</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>Empresa</strong></td>
+                    <td>Nombre de tu empresa u organización</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>Superficie Requerida</strong></td>
+                    <td>Metros cuadrados que necesitas (500-3000m²)</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>Tipo de Operación</strong></td>
+                    <td>Bodega, nave industrial, patio logístico, etc.</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td><strong>País</strong></td>
+                    <td>Tu país de residencia u origen</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Presupuesto Estimado</strong></td>
+                    <td>Rango de inversión aproximada</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Timeline</strong></td>
+                    <td>Plazo para tu proyecto (inmediato, 1-3 meses, etc.)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td><strong>Preguntas/Mensajes</strong></td>
+                    <td>Contenido de tus consultas y conversaciones</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>B) A través de Google Analytics:</h3>
+        <ul>
+            <li>Dirección IP (anónima por defecto)</li>
+            <li>Tipo y versión de navegador</li>
+            <li>Sistema operativo</li>
+            <li>Páginas visitadas y duración de visita</li>
+            <li>Fuente de tráfico (directa, buscador, referencia)</li>
+            <li>Región geográfica aproximada</li>
+        </ul>
+
+        <h3>C) A través de Meta Pixel (Facebook):</h3>
+        <ul>
+            <li>Actividad en el sitio (páginas visitadas, clics)</li>
+            <li>Eventos de conversión (formularios completados)</li>
+            <li>Información del navegador</li>
+            <li>ID anonimizado del usuario</li>
+        </ul>
+
+        <h3>D) A través de Canales de Comunicación:</h3>
+        <ul>
+            <li><strong>WhatsApp:</strong> Mensajes, fotos, documentos compartidos</li>
+            <li><strong>Telegram:</strong> Notificaciones de leads e interacciones</li>
+            <li><strong>Email:</strong> Correspondencia y documentos adjuntos</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h4>⚠️ Datos Sensibles</h4>
+            <p>
+                No recopilamos datos sensibles (origen racial, salud, información financiera detallada, etc.) 
+                a menos que sea necesario para evaluar tu solicitud de forma legal y explícita. En caso de recopilar 
+                datos sensibles, lo haremos solo con tu consentimiento expreso.
+            </p>
+        </div>
+
+        <!-- 3. Purpose -->
+        <h2 id="proposito">3. Propósito del Tratamiento</h2>
+        <p>Utilizamos tus datos personales para los siguientes propósitos:</p>
+        <ul>
+            <li><strong>Responder consultas:</strong> Contactarte sobre tu interés en NEXUS</li>
+            <li><strong>Calificar leads:</strong> Evaluar si eres cliente potencial según tus necesidades</li>
+            <li><strong>Proporcionar asesoría:</strong> Ofrecerte información sobre lotes y servicios</li>
+            <li><strong>Seguimiento comercial:</strong> Mantener contacto durante el proceso de venta</li>
+            <li><strong>Analizar comportamiento:</strong> Mejorar nuestro sitio web y servicios</li>
+            <li><strong>Publicidad dirigida:</strong> Mostrarte anuncios relevantes en redes sociales</li>
+            <li><strong>Cumplimiento legal:</strong> Cumplir con obligaciones fiscales y regulatorias</li>
+            <li><strong>Prevención de fraude:</strong> Proteger nuestros sistemas y usuarios</li>
+        </ul>
+
+        <!-- 4. Legal Basis -->
+        <h2 id="base-legal">4. Base Legal para el Tratamiento</h2>
+        <p>El tratamiento de tus datos se basa en:</p>
+        <ul>
+            <li><strong>Tu Consentimiento:</strong> Al completar el formulario o chatbot, das consentimiento explícito</li>
+            <li><strong>Ejecución de Contrato:</strong> Si avanzas a una compra/renta, es necesario para la transacción</li>
+            <li><strong>Interés Legítimo:</strong> Para mejorar nuestros servicios y análisis comercial</li>
+            <li><strong>Obligación Legal:</strong> Cumplimiento de leyes fiscales y regulatorias de México</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h4>📜 Marcos Legales Aplicables</h4>
+            <p>
+                Cumplimos con la <strong>LFPDPPP (Ley Federal de Protección de Datos Personales en Posesión de Particulares)</strong> 
+                de México. Aunque no está bajo GDPR (UE), aplicamos estándares similares de protección.
+            </p>
+        </div>
+
+        <!-- 5. Platforms -->
+        <h2 id="plataformas">5. Plataformas y Servicios que Utilizamos</h2>
+
+        <h3>A) Google Sheets</h3>
+        <p>
+            <strong>Uso:</strong> Almacenamiento centralizado de leads y datos de contacto<br>
+            <strong>Datos almacenados:</strong> Nombre, teléfono, email, empresa, superficie, tipo de operación, presupuesto<br>
+            <strong>Ubicación:</strong> Servidores de Google (pueden estar en USA o UE)<br>
+            <strong>Protección:</strong> Encriptación en tránsito; acceso limitado a Judith (asesora principal)
+        </p>
+        <p>
+            <strong>Tu control:</strong> Puedes solicitar acceso, rectificación o eliminación de tus datos.
+        </p>
+
+        <h3>B) Google Analytics</h3>
+        <p>
+            <strong>Uso:</strong> Análisis de tráfico web y comportamiento de visitantes<br>
+            <strong>Datos recopilados:</strong> IP anonimizada, navegador, sistema operativo, páginas visitadas<br>
+            <strong>Propósito:</strong> Entender cómo los usuarios interactúan con nuestro sitio<br>
+            <strong>Retención:</strong> 14 meses de inactividad antes de eliminar
+        </p>
+        <p>
+            <a href="https://policies.google.com/privacy" target="_blank">Ver Política de Privacidad de Google</a>
+        </p>
+
+        <h3>C) Meta Pixel (Facebook)</h3>
+        <p>
+            <strong>Uso:</strong> Rastreo de conversiones y publicidad dirigida<br>
+            <strong>Datos recopilados:</strong> Actividad en sitio, clics, envíos de formularios<br>
+            <strong>Propósito:</strong> Mostrar anuncios relevantes en Facebook e Instagram<br>
+            <strong>Terceros:</strong> Meta (Facebook Inc.) en USA
+        </p>
+        <p>
+            <a href="https://www.facebook.com/policies/cookies/" target="_blank">Ver Política de Cookies de Meta</a>
+        </p>
+
+        <h3>D) Telegram Bot</h3>
+        <p>
+            <strong>Uso:</strong> Notificaciones automáticas de nuevos leads<br>
+            <strong>Datos compartidos:</strong> Nombre, teléfono, email (resumen del lead)<br>
+            <strong>Receptor:</strong> Judith Leal (@nexus_logi_bot)<br>
+            <strong>Encriptación:</strong> Telegram usa encriptación de servidor
+        </p>
+
+        <h3>E) WhatsApp</h3>
+        <p>
+            <strong>Uso:</strong> Comunicación directa con clientes potenciales<br>
+            <strong>Datos:</strong> Tu número de teléfono, mensajes, archivos compartidos<br>
+            <strong>Propietario:</strong> Meta (Facebook Inc.) - USA<br>
+            <strong>Privacidad:</strong> Mensajes con encriptación end-to-end
+        </p>
+
+        <div class="highlight-box">
+            <h4>🔒 Transferencia Internacional de Datos</h4>
+            <p>
+                Algunos servicios (Google, Meta) almacenan datos en USA. Estos servicios cumplen con estándares 
+                de protección, pero es importante que sepas que tus datos pueden procesarse fuera de México.
+                Al usar nuestros servicios, aceptas estas transferencias.
+            </p>
+        </div>
+
+        <!-- 6. Retention -->
+        <h2 id="retencion">6. Tiempo de Retención de Datos</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Tipo de Dato</th>
+                    <th>Período de Retención</th>
+                    <th>Razón</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Datos del Formulario/Chatbot</td>
+                    <td>3 años desde último contacto</td>
+                    <td>Seguimiento de leads y cumplimiento fiscal</td>
+                </tr>
+                <tr>
+                    <td>Google Analytics</td>
+                    <td>14 meses de inactividad</td>
+                    <td>Análisis de tendencias</td>
+                </tr>
+                <tr>
+                    <td>Meta Pixel</td>
+                    <td>Hasta 180 días</td>
+                    <td>Reubicación de anuncios</td>
+                </tr>
+                <tr>
+                    <td>Conversaciones WhatsApp</td>
+                    <td>Mientras sea activa la conversación + 1 año</td>
+                    <td>Referencia y resolución de disputas</td>
+                </tr>
+                <tr>
+                    <td>Notificaciones Telegram</td>
+                    <td>30 días en el chat</td>
+                    <td>Notificación automática</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <strong>Eliminación:</strong> Puedes solicitar la eliminación de tus datos en cualquier momento. 
+            Eliminaremos tus datos dentro de 30 días, excepto cuando la ley nos obligue a retenerlos.
+        </p>
+
+        <!-- 7. Rights -->
+        <h2 id="derechos">7. Tus Derechos</h2>
+        <p>
+            Bajo la ley mexicana, tienes los siguientes derechos respecto a tus datos personales:
+        </p>
+
+        <h3>📋 Derecho de Acceso</h3>
+        <p>
+            Puedes solicitar una copia de todos los datos personales que tenemos sobre ti. 
+            Te la proporcionaremos en un formato accesible dentro de 20 días hábiles.
+        </p>
+
+        <h3>✏️ Derecho de Rectificación</h3>
+        <p>
+            Si tus datos son incorrectos o incompletos, puedes solicitar que los corrijamos o completemos 
+            sin costo alguno.
+        </p>
+
+        <h3>🗑️ Derecho de Cancelación (Derecho al Olvido)</h3>
+        <p>
+            Puedes solicitar la eliminación de tus datos en cualquier momento, excepto cuando:
+        </p>
+        <ul>
+            <li>Sea necesario cumplir obligaciones legales o fiscales</li>
+            <li>Haya una transacción pendiente o en curso</li>
+            <li>Sea necesario para proteger derechos de terceros</li>
+            <li>Haya consentimiento válido para continuar el tratamiento</li>
+        </ul>
+
+        <h3>🚫 Derecho de Oposición</h3>
+        <p>
+            Puedes oponer al tratamiento de tus datos para:
+        </p>
+        <ul>
+            <li>Publicidad dirigida y marketing</li>
+            <li>Análisis de comportamiento (Google Analytics)</li>
+            <li>Decisiones automatizadas basadas en perfiles</li>
+        </ul>
+
+        <h3>⚖️ Derecho de Limitación</h3>
+        <p>
+            Puedes solicitar que limitemos el uso de tus datos mientras verificas su exactitud 
+            o apelan decisiones sobre su tratamiento.
+        </p>
+
+        <h3>📤 Derecho de Portabilidad</h3>
+        <p>
+            Puedes solicitar que enteguemos tus datos en un formato estructurado y legible 
+            para transferirlos a otro servicio.
+        </p>
+
+        <h3>🤖 Decisiones Automatizadas</h3>
+        <p>
+            Tienes derecho a oponerte a decisiones totalmente automatizadas que afecten tu relación legal con nosotros.
+        </p>
+
+        <div class="highlight-box">
+            <h4>📞 Cómo Ejercer Tus Derechos</h4>
+            <p>
+                Para ejercer cualquiera de estos derechos, envía una solicitud a:<br><br>
+                <strong>Email:</strong> <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a><br>
+                <strong>Asunto:</strong> "Solicitud de [Acceso/Rectificación/Cancelación/Oposición]"<br><br>
+                Incluye tu nombre completo y los datos que solicitas. Responderemos dentro de 20 días hábiles.
+            </p>
+        </div>
+
+        <!-- 8. Security -->
+        <h2 id="seguridad">8. Seguridad de Datos</h2>
+        <p>
+            Implementamos medidas técnicas y organizativas para proteger tus datos contra:
+        </p>
+        <ul>
+            <li><strong>Acceso no autorizado:</strong> Control de acceso por contraseña a Google Sheets</li>
+            <li><strong>Encriptación:</strong> HTTPS en todo el sitio; encriptación en tránsito</li>
+            <li><strong>Malware:</strong> Monitoreo de seguridad del sitio</li>
+            <li><strong>Pérdida accidental:</strong> Backups automáticos en Google Drive</li>
+            <li><strong>Brechas de datos:</strong> Si ocurre, te notificaremos dentro de 72 horas</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h4>⚠️ Limitación de Responsabilidad</h4>
+            <p>
+                Aunque implementamos medidas de seguridad razonables, ningún sistema es 100% seguro. 
+                No podemos garantizar la seguridad absoluta de tus datos. Usas nuestros servicios bajo tu propio riesgo.
+            </p>
+        </div>
+
+        <!-- 9. Cookies -->
+        <h2 id="cookies">9. Cookies y Tecnologías de Rastreo</h2>
+
+        <h3>¿Qué son las cookies?</h3>
+        <p>
+            Las cookies son archivos pequeños que se guardan en tu navegador para recordar 
+            preferencias y rastrear comportamiento.
+        </p>
+
+        <h3>Cookies que Usamos:</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Cookie/Tecnología</th>
+                    <th>Propósito</th>
+                    <th>Tipo</th>
+                    <th>Consentimiento Requerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Analytics</td>
+                    <td>Análisis de tráfico y comportamiento</td>
+                    <td>Análitica</td>
+                    <td>Sí (puedes optar por no participar)</td>
+                </tr>
+                <tr>
+                    <td>Meta Pixel</td>
+                    <td>Rastreo de conversiones y publicidad</td>
+                    <td>Marketing</td>
+                    <td>Sí (puedes optar por no participar)</td>
+                </tr>
+                <tr>
+                    <td>Cookies de Sesión</td>
+                    <td>Mantener tu sesión activa</td>
+                    <td>Esencial</td>
+                    <td>No (necesaria para funcionamiento)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Cómo gestionar cookies:</h3>
+        <ul>
+            <li><strong>Navegador Chrome:</strong> Configuración → Privacidad y Seguridad → Cookies</li>
+            <li><strong>Firefox:</strong> Preferencias → Privacidad y Seguridad → Cookies</li>
+            <li><strong>Safari:</strong> Preferencias → Privacidad → Gestionar datos del sitio web</li>
+            <li><strong>Opt-out de Google Analytics:</strong> <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out Extension</a></li>
+        </ul>
+
+        <!-- 10. Contact -->
+        <h2 id="contacto">10. Contacto y Privacidad</h2>
+
+        <div class="contact-box">
+            <h3>Preguntas sobre tu Privacidad</h3>
+            <p>
+                Si tienes preguntas, reclamos o deseas ejercer tus derechos, contáctanos:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:asesorajudithleal@gmail.com">asesorajudithleal@gmail.com</a><br>
+                <strong>WhatsApp:</strong> <a href="https://wa.me/523411707365">+52 341 170 7365</a><br>
+                <strong>Teléfono:</strong> <a href="tel:+523411707365">+52 341 170 7365</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 13px; color: rgba(255,255,255,0.8);">
+                Responderemos todas las solicitudes dentro de 20 días hábiles según la ley mexicana.
+            </p>
+        </div>
+
+        <!-- Final Section -->
+        <h2 style="margin-top: 50px;">Cambios a esta Política</h2>
+        <p>
+            Podemos actualizar esta Política de Privacidad en cualquier momento. Los cambios significativos 
+            te serán notificados por email o mediante un aviso prominente en nuestro sitio web.
+        </p>
+
+        <h2>Ley Aplicable</h2>
+        <p>
+            Esta Política de Privacidad se rige por las leyes de la República Mexicana, 
+            específicamente por la LFPDPPP (Ley Federal de Protección de Datos Personales en Posesión de Particulares).
+        </p>
+
+        <p style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #e0e0e0; color: var(--text-light); text-align: center; font-size: 14px;">
+            <strong>© 2026 NEXUS Centro Logístico. Todos los derechos reservados.</strong><br>
+            Esta es nuestra política completa de privacidad y tratamiento de datos personales.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>NEXUS Centro Logístico</strong></p>
+        <p>Manzanillo, Colima, México</p>
+        <p><a href="/">Sitio Principal</a> | <a href="/policy">Política de Privacidad</a> | <a href="mailto:asesorajudithleal@gmail.com">Contacto</a></p>
+        <p style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px;">
+            Para ejercer tus derechos ARCO (Acceso, Rectificación, Cancelación, Oposición), 
+            <a href="mailto:asesorajudithleal@gmail.com">envía tu solicitud aquí</a>
+        </p>
+    </footer>
+</body>
+</html>
